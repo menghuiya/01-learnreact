@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- 生产环境中不建议使用 -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js" crossorigin></script>
+  </head>
+  <body>
+    <!-- 开始开发 -->
+    <!-- 注意事项:使用jsx 并且希望script中jsx代码被解析 -->
+    <div id="app"></div>
+  </body>
+  <script type="text/babel">
+    let message = 'hello world';
+    ReactDOM.render(
+      <div>
+        <h1>{message}</h1>
+        <hr></hr>
+        <h2>111</h2>
+      </div>,
+      document.querySelector('#app')
+    );
+  </script>
+</html>

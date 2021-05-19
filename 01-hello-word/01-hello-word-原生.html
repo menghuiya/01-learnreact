@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2></h2>
+    <button class="btn">改变文本</button>
+  </body>
+  <script>
+    //定义数据
+    let message = 'hello,world';
+
+    //将数据显示元素中
+    const titleELe = document.querySelector('h2');
+    titleELe.innerText = message;
+
+    //点击按钮 修改数据
+    const btnELe = document.querySelector('.btn');
+    btnELe.addEventListener('click', () => {
+      message = 'hello react';
+      titleELe.innerText = message;
+    });
+  </script>
+</html>
